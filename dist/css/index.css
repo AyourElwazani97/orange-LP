@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
 body {
   width: 100%;
   height: 100%;
@@ -67,9 +68,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: red url("../../assets/oiledbackground.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(44, 43, 40, 0.8)), to(rgba(44, 43, 40, 0.1))), url("../../assets/oiledbackground.jpg") no-repeat;
+  background: linear-gradient(90deg, rgba(44, 43, 40, 0.8), rgba(44, 43, 40, 0.1)), url("../../assets/oiledbackground.jpg") no-repeat;
   background-size: cover;
   position: relative;
+  padding: 20px 0 20px 0;
 }
 
 .oiled-parent .oiled-child {
@@ -103,7 +106,7 @@ html {
 }
 
 .oiled-parent .oiled-child .oiled-product_image_content img {
-  width: 250px;
+  width: 190px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -113,7 +116,7 @@ html {
   margin: 5px;
   position: relative;
   text-shadow: 0 5px 10px #f85a36;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .oiled-parent .oiled-child .oiled-product_image_content button {
@@ -556,6 +559,7 @@ html {
   font-weight: bold;
   line-height: 2;
   text-align: center;
+  font-size: 1.3em;
 }
 
 .testimonial {
@@ -615,7 +619,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 22px;
   font-weight: bold;
   color: #fff;
   background: rgba(0, 0, 0, 0.88) !important;
@@ -984,11 +987,11 @@ html {
     margin-bottom: 20px;
   }
   .testimonial .testimonial_child {
-    width: 100%;
+    width: 300px;
   }
   .testimonial .swiper {
     position: relative;
-    left: 5%;
+    left: 0%;
     width: 280px;
     border-radius: 0 !important;
   }
@@ -1100,6 +1103,15 @@ html {
   }
   .forum .forum_child form .odrer_btn button {
     background: #2c2b28;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .oiled-parent .oiled-child .oiled-product_image_content h1 {
+    font-size: 2.5em;
+  }
+  .oiled-parent .oiled-child .oiled-product_image_content img {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=index.css.map */
