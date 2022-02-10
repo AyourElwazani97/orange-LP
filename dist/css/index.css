@@ -870,8 +870,24 @@ html {
   .oiled-parent .oiled-child {
     width: 100%;
   }
+  .oiled-parent .oiled-child .oiled-product_image_content:before {
+    position: absolute;
+    content: "";
+    background: url("../../assets/bgproduct.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    bottom: 7%;
+  }
+  .oiled-parent .oiled-child .oiled-product_image_content h1 {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+  }
   .oiled-parent .oiled-child .oiled-product_image_content img {
-    width: 300px;
+    width: 200px;
   }
   .info-product .info-product-child {
     -ms-grid-columns: (1fr)[1];
